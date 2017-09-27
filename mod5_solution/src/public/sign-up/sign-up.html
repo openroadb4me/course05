@@ -38,9 +38,9 @@
              placeholder="Valid Email Format: handle@domain"
              class="form-control"
              ng-model="signUpCtrl.user.email"
-             required>
+             required/>
           <span
-             ng-if="regForm.email.$invalid && regForm.email.$touched">
+             ng-if="regForm.email.$touched && regForm.email.$invalid && regForm.email.$error.required">
             Must be a valid email address: handle@domain format
           </span>
         </div>
