@@ -42,7 +42,7 @@
             <span ng-if="regForm.email.$error.required && regForm.email.$touched">
               Email is required
             </span>
-            <span ng-if="regForm.email.$invalid && regForm.email.$touched">
+            <span ng-if="regForm.email.$invalid || regForm.email.$error.required && regForm.email.$touched">
               Must be a valid email address: handle@domain format
             </span>
         </div>
