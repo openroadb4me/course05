@@ -40,7 +40,7 @@
              ng-model="signUpCtrl.user.email"
              required/>
           <span
-             ng-if="regForm.email.$error.required && regForm.email.$touched && regForm.email.$invalid">
+             ng-if="regForm.email.$invalid && regForm.email.$touched">
             Must be a valid email address: handle@domain format
           </span>
         </div>
