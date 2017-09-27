@@ -14,7 +14,7 @@
     signUpCtrl.submit = function () {
       MenuService.saveData(signUpCtrl.user);
       window.scrollTo(0, 0);
-      signUpCtrl.resultMessage = "Your information is getting saved successfully. Go to Information section please.";
+      signUpCtrl.resultMessage = "Your information has been saved successfully. Go to the 'My Info' section, please!";
       $('#myModal').modal();
     };
 
